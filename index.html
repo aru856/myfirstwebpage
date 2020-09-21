@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Permanent+Marker&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="left-side">
+                <div class="navbar-link active-nav-link"> 
+                    <a href="index.html"><b>Home</b></a>
+                </div>
+                <div class="navbar-link">
+                    <a href="about.html"><b>About</b></a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div>ARUDHEEPA.C</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/portfolio1.jpg);"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href=https://fresh2refresh.com/c-programming/c-basic-program>
+                                    <img src="images/logos/c.png"  alt="" >
+                                </a>
+                            </div>
+                            <div class="subtitle">
+                                Click here to learn about basic C languages...
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/portfolio2.jpg);"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper"><a href="https://www.programiz.com/cpp-programming">
+                                <img src="images/logos/c++.png" alt=""></a>
+                            </div>
+                            <div class="subtitle">
+                                Just one click to explore your c++ language...
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/portfolio3.jpg);"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="https://www.w3schools.com/html/">
+                                <img src="images/logos/html.png" alt=""></a>
+                            </div>
+                            <div class="subtitle">
+                                Click to learn about front end designing using HTML,CSS,JS...
+                            </div>
+                        </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/portfolio4.jpg);"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="https://beginnersbook.com/java-tutorial-for-beginners-with-examples/">
+                                <img src="images/logos/java.png" alt=""></a>
+                            </div>
+                            <div class="subtitle">
+                                Click here to learn about Java...
+                            </div>
+                        </div>
+                
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/portfolio5.jpg);"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="https://www.w3schools.com/python/">
+                                <img src="images/logos/py.png" alt="">
+                                 </a>
+                            </div>
+                            <div class="subtitle">
+                                Click here to learn PY concepts...
+                            </div>
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/portfolio6.jpg);"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href="https://www.linuxlinks.com/beginnerbooks/">
+                                <img src="images/logos/library.png" alt=""></a>
+                            </div>
+                            <div class="subtitle">
+                                Click here to Learn about Newthings...
+                            </div>
+                        </div>
+                
+                </div>
+          </div>
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',() =>{
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout',() =>{
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
